@@ -1,0 +1,8 @@
+<h1>These are your results!</h1>
+
+<% results['drinks'].forEach(function(name) { %>
+    <img src= "<%= name['strDrinkThumb'] %>">
+    <li><%= name['strDrink'] %> - <%= name['strInstructions'] %></li>
+<% }) %>
+
+<a href="/">Search Another Drink</a>

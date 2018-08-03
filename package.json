@@ -1,0 +1,25 @@
+{
+  "name": "drinklibrary",
+  "version": "1.0.0",
+  "description": "Node drink library",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhalilAmin/drinklibrary.git"
+  },
+  "author": "Khalil Amin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KhalilAmin/drinklibrary/issues"
+  },
+  "homepage": "https://github.com/KhalilAmin/drinklibrary#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "npm": "^6.3.0",
+    "request": "^2.87.0"
+  }
+}
