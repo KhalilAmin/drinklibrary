@@ -21,6 +21,7 @@ function showSearchForm() {
 }
 
 function showSearchResults() {
+  event.preventDefault();
   document.getElementById("searchResultsDisplay").classList.toggle("show");
 }
 
