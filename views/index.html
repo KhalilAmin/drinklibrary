@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="index.js"></script>
+  <title>Drink Library</title>
+</head>
+
+<body>
+
+  <header>
+    <navbar class="navbar fixed-top">
+      <h1 id="appName">APP NAME HERE
+      </h1>
+      <div class="dropdown">
+        <img src="martini.jpg" onclick="myFunction()" class="dropbtn btn-lg dropbtn">
+        <div id="myDropdown" class="dropdown-content">
+          <p onclick="showSearchForm()">MAKE A DRINK WITH WHAT I HAVE</p>
+          <p>SOME FUNCTION</p>
+          <p>SOME OTHER FUNCTION</P>
+        </div>
+      </div>
+    </navbar>
+  </header>
+
+  <div id="display" class="container">
+    <div class="row">
+      <div id="search" class="col-sm-6">
+        <form>
+          <input type="text" placeholder="INGREDIENTS">
+          <br>
+          <br>
+          <br>
+          <button onclick="showSearchResults()" id="findDrinkBtn" class="btn" type "submit">WHAT CAN I MAKE?</button>
+        </form>
+        <p class="closeDiv" onclick="closeSearchDiv()">CLOSE</p>
+      </div>
+      <div id="searchResultsDisplay" class='col-sm-6'>
+        <h1>HERE'S WHAT WE FOUND...</h1>
+        <br>
+        <h5>SEARCH RESULTS WILL POPULATE HERE</h5>
+        <h5>SEARCH RESULTS WILL POPULATE HERE</h5>
+        <h5>SEARCH RESULTS WILL POPULATE HERE</h5>
+        <h5>SEARCH RESULTS WILL POPULATE HERE</h5>
+        <h5>SEARCH RESULTS WILL POPULATE HERE</h5>
+        <h5>SEARCH RESULTS WILL POPULATE HERE</h5>
+        <p class="closeDiv" onclick="closeResultsDiv()">CLOSE</p>
+      </div>
+    </div>
+  </div>
+
+</body>
