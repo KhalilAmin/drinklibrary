@@ -16,19 +16,29 @@ window.onclick = function(event) {
   }
 };
 
+function showAbout() {
+  document.getElementById("about").style.display = "block";
+}
+
 function showSearchForm() {
-  document.getElementById("search").classList.toggle("show");
+  document.getElementById("display").style.display = "block";
 }
 
 function showSearchResults() {
   event.preventDefault();
-  document.getElementById("searchResultsDisplay").classList.toggle("show");
+  // document.getElementById("searchResultsDisplay").style.display = "block";
+  document.getElementById("display").innerHTML =
+    "<p class='closeDiv' onclick='closeSearchDiv()'>CLOSE</p>";
+}
+
+function closeAboutDiv() {
+  document.getElementById("about").style.display = "none";
 }
 
 function closeResultsDiv() {
-  document.getElementById("searchResultsDisplay").classList.toggle("show");
+  document.getElementById("searchResultsDisplay").style.display = "none";
 }
 
 function closeSearchDiv() {
-  document.getElementById("search").classList.toggle("show");
+  document.getElementById("display").style.display = "none";
 }
