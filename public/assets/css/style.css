@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans Condensed", sans-serif;
-  background-color: black;
-  background-image: url("cocktail2.jpg");
+  background-color: white;
+  background-image: url("./images/cocktail2.jpg");
   background-size: auto;
   background-repeat: none;
 }
