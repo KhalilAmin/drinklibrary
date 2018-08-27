@@ -1,6 +1,16 @@
-<h1>What do you want to make?</h1>
+<% include partials/header %>
+  <navbar>
+    <li>
+      <a href="#">Here</a>
+      <a href="www.google.com">Google</a>
+    </li>
+  </navbar>
 
-<form action="/search" method="GET">
+  <h1>What do you want to make?</h1>
+
+  <form action="/search" method="GET">
     <input type="text" placeholder="Search" name="drink">
     <input type="submit">
-</form>
+  </form>
+
+<% include partials/footer %>

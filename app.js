@@ -2,11 +2,12 @@ var express = require("express");
 var app = express();
 var request = require("request");
 var bodyParser = require("body-parser");
+var path = require("path");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + "/public"));
+app.use("/public", express.static(path.join(__dirname, 'public')));
 
 app.set("view engine", "ejs");
 
@@ -17,8 +18,8 @@ app.get("/", function(req, res) {
 // API call to get drinks from search.
 app.get("/search", function(req, res) {
   var search = req.query.drink;
-  var url =
-    "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + search;
+  var url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + search;
+  
   request(url, function(error, response, body) {
     if (!error && response.statusCode == 200) {
       var results = JSON.parse(body);
@@ -29,7 +30,7 @@ app.get("/search", function(req, res) {
       err,
         function() {
           console.log("Error");
-          res.send("Could no find a drink.");
+          res.send("Could not find a drink.");
         };
   });
 });
