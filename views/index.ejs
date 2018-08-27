@@ -2,14 +2,13 @@
 
   <header>
     <navbar class="navbar fixed-top">
-      <h1 id="appName">APP NAME HERE
-      </h1>
+      <h1 id="appName">The Drink Library</h1>
       <div class="dropdown">
         <img src="/public/assets/images/martini.jpg" onclick="myFunction()" class="dropbtn btn-lg dropbtn">
         <div id="myDropdown" class="dropdown-content">
           <p onclick="showAbout()">ABOUT</p>
           <p onclick="showSearchForm()">MAKE A DRINK WITH WHAT I HAVE</p>
-          <p>SOME OTHER FUNCTION</P>
+          <p onclick="showAltSearchForm()">Search Drinks</P>
         </div>
       </div>
     </navbar>
@@ -47,7 +46,13 @@
     <p class="closeDiv" onclick="closeSearchDiv()">CLOSE</p>
     <!-- </div> -->
   </div>
+
+  <div id="search" class="container">
+    <form action="/search" method="GET">
+      <input type="text" placeholder="Search" name="drink">
+      <input type="submit">
+    </form>
+    <p class="closeDiv" onclick="closeAltSearchDiv()">CLOSE</p>
   </div>
-  </div>
-  
+
 <% include partials/footer %>

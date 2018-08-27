@@ -24,6 +24,10 @@ function showSearchForm() {
   document.getElementById("display").style.display = "block";
 }
 
+function showAltSearchForm() {
+  document.getElementById("search").style.display = "block";
+}
+
 function showSearchResults() {
   event.preventDefault();
   // document.getElementById("searchResultsDisplay").style.display = "block";
@@ -41,4 +45,8 @@ function closeResultsDiv() {
 
 function closeSearchDiv() {
   document.getElementById("display").style.display = "none";
+}
+
+function closeAltSearchDiv() {
+  document.getElementById("search").style.dusplay = "none";
 }
